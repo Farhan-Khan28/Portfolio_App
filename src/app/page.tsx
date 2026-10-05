@@ -1,69 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useState } from "react";
+import BootSequence from "@/components/BootSequence";
+import CommandPalette from "@/components/CommandPalette";
+import CursorSpotlight from "@/components/CursorSpotlight";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import TrustBar from "@/components/TrustBar";
+import AboutSection from "@/components/AboutSection";
+import Capabilities from "@/components/Capabilities";
+import ProjectsSection from "@/components/ProjectsSection";
+import ProcessSection from "@/components/ProcessSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import GitHubSection from "@/components/GitHubSection";
+import DeveloperTerminal from "@/components/DeveloperTerminal";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
+  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="min-h-screen bg-[#08090B] text-[#F5F7FA] selection:bg-[#6366F1]/30 selection:text-[#F5F7FA]">
+      {/* Version 2 Motion & Interaction Drivers */}
+      <BootSequence />
+      <CursorSpotlight />
+      <CommandPalette
+        isOpen={commandPaletteOpen}
+        onClose={() => setCommandPaletteOpen(false)}
+      />
+
+      {/* Sticky Top Navigation */}
+      <Navbar onOpenCommandPalette={() => setCommandPaletteOpen(true)} />
+
+      {/* Core Architectural Page Flow */}
+      <HeroSection />
+      <TrustBar />
+      <AboutSection />
+      <Capabilities />
+      <ProjectsSection />
+      <ProcessSection />
+      <ExperienceSection />
+      <GitHubSection />
+      <DeveloperTerminal />
+      <ContactSection />
+
+      {/* Truthful Technical Footer */}
+      <Footer />
+    </main>
   );
 }
