@@ -1,9 +1,5 @@
-"use client";
-
-import { useState } from "react";
-import CommandPalette from "@/components/CommandPalette";
 import CursorSpotlight from "@/components/CursorSpotlight";
-import Navbar from "@/components/Navbar";
+import PageClientWrapper from "@/components/PageClientWrapper";
 import HeroSection from "@/components/HeroSection";
 import TrustBar from "@/components/TrustBar";
 import AboutSection from "@/components/AboutSection";
@@ -17,21 +13,10 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
-
   return (
     <main className="min-h-screen bg-[#08090B] text-[#F5F7FA] selection:bg-[#6366F1]/30 selection:text-[#F5F7FA]">
-      {/* Motion & Interaction Drivers */}
       <CursorSpotlight />
-      <CommandPalette
-        isOpen={commandPaletteOpen}
-        onClose={() => setCommandPaletteOpen(false)}
-      />
-
-      {/* Sticky Top Navigation */}
-      <Navbar onOpenCommandPalette={() => setCommandPaletteOpen(true)} />
-
-      {/* Core Architectural Page Flow */}
+      <PageClientWrapper />
       <HeroSection />
       <TrustBar />
       <AboutSection />
@@ -42,8 +27,6 @@ export default function Home() {
       <GitHubSection />
       <DeveloperTerminal />
       <ContactSection />
-
-      {/* Truthful Technical Footer */}
       <Footer />
     </main>
   );

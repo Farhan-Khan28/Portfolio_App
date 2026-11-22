@@ -21,7 +21,7 @@ export default function Navbar({ onOpenCommandPalette }: { onOpenCommandPalette?
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 15) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -51,8 +51,8 @@ export default function Navbar({ onOpenCommandPalette }: { onOpenCommandPalette?
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#08090B]/85 backdrop-blur-md border-b border-[#252A33] py-3.5 shadow-2xl"
-          : "bg-transparent py-6"
+          ? "bg-[#08090B]/95 backdrop-blur-md border-b border-[#252A33] py-3.5 shadow-2xl"
+          : "bg-[#08090B]/50 backdrop-blur-sm border-b border-transparent py-5 sm:py-6"
       }`}
     >
       <div className="container flex items-center justify-between">

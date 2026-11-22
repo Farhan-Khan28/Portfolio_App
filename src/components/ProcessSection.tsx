@@ -17,8 +17,8 @@ const PROCESS_STEPS = [
     title: "ARCHITECT",
     subtitle: "Database Schema & API Contract Design",
     icon: Compass,
-    description: "Architect normalized MySQL relational ERDs, design RESTful endpoint schemas, and define object-oriented PHP service boundaries.",
-    deliverables: ["MySQL ERD Schema Diagrams", "REST API Contract Definitions", "Security & Auth Policies"],
+    description: "Architect normalized relational database schemas across PostgreSQL & MySQL, design RESTful endpoint contracts, and define service boundaries in Node.js and Laravel.",
+    deliverables: ["Relational ERD Schema Diagrams", "REST API Contract Definitions", "Security & Auth Policies"],
   },
   {
     step: "03",
@@ -86,6 +86,7 @@ export default function ProcessSection() {
               <button
                 key={s.step}
                 onClick={() => setActiveStep(idx + 1)}
+                aria-label={`Phase ${s.step}: ${s.title}`}
                 className={`p-3.5 rounded-xl border text-left transition-all duration-200 flex flex-col justify-between h-28 ${
                   isCurrent
                     ? "bg-[#15181D] border-[#6366F1] shadow-[0_0_20px_rgba(99,102,241,0.2)]"

@@ -15,30 +15,43 @@ interface ExperienceItem {
 const EXPERIENCES: ExperienceItem[] = [
   {
     role: "Full-Stack Web Developer",
-    organization: "Web & Enterprise Software Solutions",
+    organization: "Enterprise Solutions & SaaS Platforms",
     duration: "2023 — PRESENT",
-    type: "Full-time / Client Projects",
-    description: "Lead developer engineering custom web applications, database schemas, and REST API integrations for business management, attendance automation, and client platforms.",
+    type: "Full-time · Remote",
+    description: "Lead developer engineering custom web applications, database schemas, and REST API microservices for business management, attendance automation, and client platforms.",
     contributions: [
-      "Architected normalized MySQL database schemas, reducing query latency by 40% on enterprise CRM rosters.",
-      "Designed and deployed secure REST APIs in Laravel with Sanctum token authentication and RBAC middleware.",
-      "Engineered real-time features and responsive client interfaces using modern JavaScript, HTML5, and CSS3.",
-      "Integrated third-party APIs and cron-scheduled background data synchronization jobs.",
+      "Architected normalized PostgreSQL & MySQL schemas, reducing query latency by 40% on enterprise rosters.",
+      "Designed and deployed secure REST APIs in Node.js and Laravel with Sanctum token authentication and RBAC middleware.",
+      "Engineered real-time features and responsive client interfaces using modern React.js, WebSockets, HTML5, and CSS3.",
+      "Integrated third-party APIs, webhooks, and cron-scheduled background data synchronization workers.",
     ],
-    tech: ["Laravel", "PHP", "MySQL", "JavaScript", "REST APIs", "Git"],
+    tech: ["React.js", "Node.js", "Laravel", "PostgreSQL", "MySQL", "WebSockets", "Git"],
   },
   {
     role: "Backend & API Developer",
-    organization: "Application Engineering & Systems",
+    organization: "Freelance & Systems Engineering",
     duration: "2022 — 2023",
-    type: "Web Application Development",
+    type: "Contract · Backend",
     description: "Focused on core server-side development, database optimization, authentication flows, and API endpoint construction.",
     contributions: [
       "Built custom MVC business logic controllers and Eloquent ORM mappings in PHP/Laravel.",
       "Refactored legacy database queries to resolve 504 Gateway Timeout errors during high-volume report exports.",
-      "Implemented input sanitization and CSRF protection policies across application forms.",
+      "Implemented input sanitization, rate-limiting, and CSRF protection policies across application forms.",
     ],
-    tech: ["PHP", "Laravel", "MySQL", "HTML/CSS", "JavaScript", "REST APIs"],
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "REST APIs", "Git"],
+  },
+  {
+    role: "Bachelor of Science — Computer Science",
+    organization: "Academic Degree",
+    duration: "2019 — 2023",
+    type: "Four-Year Degree",
+    description: "Comprehensive university education covering software engineering principles, algorithms, relational database management, and distributed systems.",
+    contributions: [
+      "Rigorous coursework in Data Structures, Database Systems, Web Architectures, and Object-Oriented Design.",
+      "Engineered production-grade capstone web application featuring full authentication, role permissions, and normalized database schema.",
+      "Graduated with deep foundations in scalable backend engineering and clean software craft.",
+    ],
+    tech: ["Algorithms", "Relational Databases", "Software Architecture", "Data Structures", "OOP"],
   },
 ];
 
@@ -56,7 +69,7 @@ export default function ExperienceSection() {
             Engineering Experience
           </h2>
           <p className="text-[#A5ABB5] text-base max-w-2xl">
-            A history of building, optimizing, and maintaining production-grade web applications.
+            4+ years of engineering experience building, optimizing, and maintaining production-grade web applications.
           </p>
         </div>
 

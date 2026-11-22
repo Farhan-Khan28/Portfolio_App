@@ -49,7 +49,7 @@ export default function DeveloperTerminal() {
         outputResult = "Full-Stack Web Developer (2023 - Present) | Backend & API Developer (2022 - 2023)";
         break;
       case "contact":
-        outputResult = "Email: contact@farhankhan.dev | LinkedIn: farhankhan | GitHub: farhankhan";
+        outputResult = "Email: contact@farhankhan.dev | GitHub: github.com/Farhan-Khan28 | LinkedIn: linkedin.com/in/farhankhan";
         break;
       case "sudo hire farhan":
         outputResult = (
@@ -128,7 +128,7 @@ export default function DeveloperTerminal() {
               placeholder="Enter command (e.g. stack, projects, sudo hire farhan)..."
               className="w-full bg-transparent font-mono text-xs sm:text-sm text-[#F5F7FA] placeholder-[#6F7682] outline-none"
             />
-            <button type="submit" className="text-[#6F7682] hover:text-[#818CF8]">
+            <button type="submit" aria-label="Submit command" className="text-[#6F7682] hover:text-[#818CF8]">
               <CornerDownLeft className="w-4 h-4" />
             </button>
           </form>

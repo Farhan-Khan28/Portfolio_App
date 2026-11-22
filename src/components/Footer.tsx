@@ -112,12 +112,12 @@ export default function Footer() {
 
           <div>
             <div className="text-[#6F7682]">PRIMARY STACK</div>
-            <div className="text-[#F5F7FA] font-bold mt-0.5">Laravel / PHP / MySQL / JS</div>
+            <div className="text-[#F5F7FA] font-bold mt-0.5">React.js · Node.js · Laravel · MySQL</div>
           </div>
 
           <div>
             <div className="text-[#6F7682]">LAST SYSTEM UPDATE</div>
-            <div className="text-[#818CF8] font-bold mt-0.5">October 2026</div>
+            <div className="text-[#818CF8] font-bold mt-0.5">{new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' })}</div>
           </div>
         </div>
 

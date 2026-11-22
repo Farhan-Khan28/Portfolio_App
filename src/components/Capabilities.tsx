@@ -135,10 +135,10 @@ export default function Capabilities() {
                 {/* Bottom Architectural Connector Indicator */}
                 <div className="mt-6 pt-4 border-t border-[#1E222A] flex items-center justify-between font-mono text-[11px] text-[#6F7682]">
                   <span>INTEGRATED CAPABILITY</span>
-                  <span className="flex items-center gap-1 text-[#818CF8] opacity-0 group-hover:opacity-100 transition-opacity">
+                  <a href="#work" className="flex items-center gap-1 text-[#818CF8] opacity-0 group-hover:opacity-100 transition-opacity no-underline hover:text-[#6366F1]">
                     <span>View Projects</span>
                     <ArrowRight className="w-3 h-3" />
-                  </span>
+                  </a>
                 </div>
               </div>
             );

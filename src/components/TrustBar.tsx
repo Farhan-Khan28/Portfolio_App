@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, Database, Server, Terminal, Shield, GitBranch, Cpu, Layers } from "lucide-react";
+import { Code2, Database, Server, Terminal, Zap, GitBranch, Cpu, Layers } from "lucide-react";
 
 const TECH_SIGNATURES = [
   { name: "React.js", category: "Frontend Engine", icon: Layers },
@@ -8,7 +8,7 @@ const TECH_SIGNATURES = [
   { name: "Laravel", category: "Backend Framework", icon: Server },
   { name: "PostgreSQL", category: "Relational DB", icon: Database },
   { name: "MySQL", category: "Relational DB", icon: Database },
-  { name: "WebSockets", category: "Real-Time", icon: Shield },
+  { name: "WebSockets", category: "Real-Time", icon: Zap },
 ];
 
 export default function TrustBar() {

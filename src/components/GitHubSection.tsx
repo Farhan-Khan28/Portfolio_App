@@ -135,6 +135,7 @@ export default function GitHubSection() {
             <div className="flex items-center gap-3">
               <button
                 onClick={handleCopy}
+                aria-label="Copy code to clipboard"
                 className="p-1.5 rounded bg-[#15181D] border border-[#252A33] text-[#A5ABB5] hover:text-[#F5F7FA] text-xs font-mono flex items-center gap-1"
               >
                 {copied ? <Check className="w-3.5 h-3.5 text-[#10B981]" /> : <Copy className="w-3.5 h-3.5" />}
@@ -142,10 +143,11 @@ export default function GitHubSection() {
               </button>
               
               <a
-                href="https://github.com"
+                href="https://github.com/Farhan-Khan28"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline btn-sm text-xs flex items-center gap-1.5"
+                aria-label="View on GitHub"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">GitHub</span>

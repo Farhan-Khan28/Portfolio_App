@@ -16,20 +16,30 @@ export default function ContactSection() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-
     if (!formData.name || !formData.email || !formData.message) {
       setError("Please fill out all required fields.");
       return;
     }
-
     setLoading(true);
-    setTimeout(() => {
+    try {
+      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Failed to send message. Please email directly at contact@farhankhan.dev");
+      }
+    } catch {
+      setError("Network error. Please email directly at contact@farhankhan.dev");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1000);
+    }
   };
 
   return (
@@ -105,7 +115,7 @@ export default function ContactSection() {
                   <div>
                     <div className="font-mono text-xs text-[#6F7682]">GITHUB REPOSITORIES</div>
                     <div className="text-sm font-bold text-[#F5F7FA] group-hover:text-[#6366F1] transition-colors">
-                      github.com/farhankhan
+                      github.com/Farhan-Khan28
                     </div>
                   </div>
                 </div>

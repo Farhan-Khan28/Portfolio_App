@@ -48,9 +48,9 @@ export default function HeroSection() {
                 <span>View My Work</span>
                 <ArrowRight className="w-4 h-4" />
               </MagneticButton>
-              <MagneticButton href="#contact" className="btn btn-secondary flex items-center gap-2" id="hero-cta-resume">
-                <Download className="w-4 h-4 text-[#818CF8]" />
-                <span>Download Resume</span>
+              <MagneticButton href="#contact" className="btn btn-secondary flex items-center gap-2" id="hero-cta-resume" aria-label="Contact me">
+                <Mail className="w-4 h-4 text-[#818CF8]" />
+                <span>Get in Touch</span>
               </MagneticButton>
             </div>
 

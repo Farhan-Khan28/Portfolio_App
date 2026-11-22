@@ -68,7 +68,7 @@ export const PROJECTS: ProjectData[] = [
       "Optimized query performance eliminating 504 server timeouts for large data reporting batches.",
       "Configured automated background cron synchronization pipelines.",
     ],
-    githubUrl: "https://github.com/farhankhan",
+    githubUrl: "https://github.com/Farhan-Khan28",
     demoUrl: "https://jibzcrm.in",
   },
   {
@@ -118,7 +118,7 @@ export const PROJECTS: ProjectData[] = [
       "Designed and optimized PostgreSQL relational database schema, indexes, and connection pools.",
       "Configured robust RESTful API gateway contracts and WebSocket protocols.",
     ],
-    githubUrl: "https://github.com/farhankhan",
+    githubUrl: "https://github.com/Farhan-Khan28",
     demoUrl: "https://web.ktmessenger.com",
   },
   {
@@ -166,7 +166,7 @@ export const PROJECTS: ProjectData[] = [
       "Architected Laravel backend APIs for attendance verification, leave request management, and reporting.",
       "Created MySQL database schema for employees, shifts, logs, and manager approvals.",
     ],
-    githubUrl: "https://github.com/farhankhan",
+    githubUrl: "https://github.com/Farhan-Khan28",
   },
   {
     id: "analytics-integration",
@@ -209,6 +209,6 @@ export const PROJECTS: ProjectData[] = [
       "Configured scheduled queue workers for background data ingestion.",
       "Designed database schema for sync logs, API credentials, and metric reports.",
     ],
-    githubUrl: "https://github.com/farhankhan",
+    githubUrl: "https://github.com/Farhan-Khan28",
   },
 ];

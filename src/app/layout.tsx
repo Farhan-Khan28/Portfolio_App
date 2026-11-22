@@ -21,35 +21,29 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Farhan Khan — Senior Full-Stack Web Developer",
-  description: "Farhan Khan designs and builds complete, production-ready web applications across frontend, backend (Laravel/PHP), databases (MySQL), APIs, authentication, and architecture.",
-  keywords: [
-    "Farhan Khan",
-    "Full-Stack Web Developer",
-    "Laravel Developer",
-    "PHP Developer",
-    "MySQL Database Architect",
-    "REST API Architecture",
-    "Web Application Engineer",
-  ],
+  metadataBase: new URL("https://farhan-khan28.github.io"),
+  title: "Farhan Khan — Full-Stack Web Developer | React, Node.js, Laravel",
+  description: "Farhan Khan is a full-stack web developer specializing in React.js, Node.js microservices, Laravel, PostgreSQL, and MySQL. Building scalable, production-ready web applications.",
+  keywords: ["Farhan Khan","Full-Stack Developer","React.js Developer","Node.js Developer","Laravel Developer","PostgreSQL","MySQL","Web Application Engineer","Microservices","Pakistan"],
   authors: [{ name: "Farhan Khan" }],
   creator: "Farhan Khan",
+  icons: { icon: "/Portfolio_App/favicon.ico", shortcut: "/Portfolio_App/favicon.ico" },
   openGraph: {
-    title: "Farhan Khan — Senior Full-Stack Web Developer",
-    description: "Building scalable, secure and user-focused web applications from schema to browser engine.",
+    title: "Farhan Khan — Full-Stack Web Developer",
+    description: "React.js, Node.js microservices, Laravel, PostgreSQL & MySQL — building scalable web platforms from schema to browser.",
     type: "website",
     locale: "en_US",
     siteName: "Farhan Khan Portfolio",
+    url: "https://farhan-khan28.github.io/Portfolio_App/",
+    images: [{ url: "/Portfolio_App/og-image.png", width: 1200, height: 630, alt: "Farhan Khan — Full-Stack Web Developer" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Farhan Khan — Senior Full-Stack Web Developer",
-    description: "Building scalable, secure and user-focused web applications.",
+    title: "Farhan Khan — Full-Stack Web Developer",
+    description: "React.js, Node.js, Laravel, PostgreSQL & MySQL — full-stack engineer.",
+    images: ["/Portfolio_App/og-image.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

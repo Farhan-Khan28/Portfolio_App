@@ -176,6 +176,7 @@ export default function CommandPalette({
           />
           <button
             onClick={onClose}
+            aria-label="Close command palette"
             className="p-1 rounded bg-[#15181D] border border-[#252A33] text-[#A5ABB5] hover:text-[#F5F7FA]"
           >
             <X className="w-4 h-4" />
