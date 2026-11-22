@@ -1,14 +1,14 @@
 "use client";
 
-import { Code2, Database, Server, Terminal, Shield, GitBranch } from "lucide-react";
+import { Code2, Database, Server, Terminal, Shield, GitBranch, Cpu, Layers } from "lucide-react";
 
 const TECH_SIGNATURES = [
+  { name: "React.js", category: "Frontend Engine", icon: Layers },
+  { name: "Node.js", category: "Microservices", icon: Cpu },
   { name: "Laravel", category: "Backend Framework", icon: Server },
-  { name: "PHP", category: "Language Engine", icon: Code2 },
+  { name: "PostgreSQL", category: "Relational DB", icon: Database },
   { name: "MySQL", category: "Relational DB", icon: Database },
-  { name: "JavaScript", category: "Client Logic", icon: Terminal },
-  { name: "REST APIs", category: "Integration", icon: Shield },
-  { name: "Git / GitHub", category: "Version Control", icon: GitBranch },
+  { name: "WebSockets", category: "Real-Time", icon: Shield },
 ];
 
 export default function TrustBar() {

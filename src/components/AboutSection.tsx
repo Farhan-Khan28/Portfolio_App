@@ -80,15 +80,19 @@ export default function AboutSection() {
             <div className="flex flex-col gap-3 pt-2">
               <div className="flex items-center gap-3 text-sm text-[#F5F7FA]">
                 <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
-                <span>Production-ready Laravel & PHP backend engineering</span>
+                <span>Reactive React.js client interfaces & real-time WebSockets</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-[#F5F7FA]">
                 <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
-                <span>Normalized MySQL database design & query optimization</span>
+                <span>Node.js microservices & Laravel MVC backend architectures</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-[#F5F7FA]">
                 <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
-                <span>Secure RESTful APIs with Sanctum/JWT authentication</span>
+                <span>PostgreSQL & MySQL database design and query optimization</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-[#F5F7FA]">
+                <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                <span>Secure RESTful APIs with JWT & Sanctum authentication</span>
               </div>
             </div>
           </div>
@@ -101,11 +105,11 @@ export default function AboutSection() {
               </h3>
               
               <p>
-                My approach to web development prioritizes durability, clean code structure, and measurable operational value. When building a platform—whether it's a multi-tenant CRM, a real-time messaging application, or a biometric attendance tracker—I start from the data layer up.
+                My approach to web development prioritizes durability, clean code structure, and measurable operational value. When building a platform—whether it's an enterprise CRM, a distributed real-time messaging application, or high-throughput API microservices—I start from the data layer up.
               </p>
 
               <p>
-                I craft relational database schemas in <strong className="text-[#F5F7FA]">MySQL</strong> with strict foreign key constraints and indexed queries, write maintainable object-oriented backend logic in <strong className="text-[#F5F7FA]">Laravel & PHP</strong>, and deliver responsive, intuitive client interfaces using modern <strong className="text-[#F5F7FA]">JavaScript, HTML5, and CSS3</strong>.
+                I craft relational database schemas in <strong className="text-[#F5F7FA]">PostgreSQL & MySQL</strong> with strict foreign keys and composite indexes, write maintainable services in <strong className="text-[#F5F7FA]">Node.js & Laravel</strong>, and deliver reactive, responsive client experiences using <strong className="text-[#F5F7FA]">React.js and modern JavaScript</strong>.
               </p>
 
               <p>

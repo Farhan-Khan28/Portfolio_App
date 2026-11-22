@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import BootSequence from "@/components/BootSequence";
 import CommandPalette from "@/components/CommandPalette";
 import CursorSpotlight from "@/components/CursorSpotlight";
 import Navbar from "@/components/Navbar";
@@ -22,8 +21,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#08090B] text-[#F5F7FA] selection:bg-[#6366F1]/30 selection:text-[#F5F7FA]">
-      {/* Version 2 Motion & Interaction Drivers */}
-      <BootSequence />
+      {/* Motion & Interaction Drivers */}
       <CursorSpotlight />
       <CommandPalette
         isOpen={commandPaletteOpen}

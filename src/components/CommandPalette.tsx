@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Search, ArrowRight, ArrowUpRight, X, Terminal, Code, Layers, User, Briefcase, Mail } from "lucide-react";
+import { Search, ArrowRight, ArrowUpRight, X, Terminal, Code, Layers, User, Briefcase, Mail, Globe } from "lucide-react";
 
 interface ActionItem {
   id: string;
@@ -14,9 +14,25 @@ interface ActionItem {
 
 const COMMAND_ACTIONS: ActionItem[] = [
   {
+    id: "live-ktmessenger",
+    title: "Launch KT Messenger (Live System)",
+    subtitle: "web.ktmessenger.com · React.js & Node.js Microservices, PostgreSQL",
+    category: "Projects",
+    icon: Globe,
+    href: "https://web.ktmessenger.com",
+  },
+  {
+    id: "live-jibzcrm",
+    title: "Launch JIBZ CRM (Live Platform)",
+    subtitle: "jibzcrm.in · Laravel & MySQL Enterprise Business Platform",
+    category: "Projects",
+    icon: Globe,
+    href: "https://jibzcrm.in",
+  },
+  {
     id: "work",
-    title: "View Projects & Applications",
-    subtitle: "Explore JIBZ CRM, KT Messenger, Attendance System",
+    title: "View Projects & Architecture Showcase",
+    subtitle: "Explore JIBZ CRM, KT Messenger, Attendance Engine",
     category: "Projects",
     icon: Code,
     href: "#work",
@@ -24,7 +40,7 @@ const COMMAND_ACTIONS: ActionItem[] = [
   {
     id: "about",
     title: "About Farhan & Architecture Philosophy",
-    subtitle: "Engineering focus, stack info & biography",
+    subtitle: "Full-stack engineering focus, stack info & biography",
     category: "Navigation",
     icon: User,
     href: "#about",
@@ -128,6 +144,10 @@ export default function CommandPalette({
 
   const executeAction = (href: string) => {
     onClose();
+    if (href.startsWith("http")) {
+      window.open(href, "_blank", "noopener,noreferrer");
+      return;
+    }
     const target = document.querySelector(href);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });

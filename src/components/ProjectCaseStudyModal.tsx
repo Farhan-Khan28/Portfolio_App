@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, CheckCircle2, AlertTriangle, Code, Server, Database, ShieldCheck, ArrowRight } from "lucide-react";
+import { X, CheckCircle2, AlertTriangle, Code, Server, Database, ShieldCheck, ArrowRight, Globe } from "lucide-react";
 import { ProjectData } from "@/data/projectsData";
 import { GithubIcon } from "./SocialIcons";
 
@@ -214,18 +214,32 @@ export default function ProjectCaseStudyModal({ project, onClose }: ModalProps) 
           )}
 
           {/* Footer Actions */}
-          <div className="pt-6 border-t border-[#1E222A] flex items-center justify-between">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary text-xs flex items-center gap-2"
-              >
-                <GithubIcon className="w-4 h-4" />
-                <span>View Repository</span>
-              </a>
-            )}
+          <div className="pt-6 border-t border-[#1E222A] flex flex-wrap items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-3">
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary text-xs flex items-center gap-2 shadow-[0_0_15px_rgba(99,102,241,0.25)]"
+                >
+                  <Globe className="w-4 h-4" />
+                  <span>Launch Live App ({project.demoUrl.replace(/^https?:\/\//, "")})</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+              )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary text-xs flex items-center gap-2"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  <span>View Repository</span>
+                </a>
+              )}
+            </div>
             <button onClick={onClose} className="btn btn-outline text-xs">
               Close Case Study
             </button>

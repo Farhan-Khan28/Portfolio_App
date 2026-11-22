@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRight, Eye } from "lucide-react";
+import { ArrowUpRight, Eye, Globe } from "lucide-react";
 import { PROJECTS, ProjectData } from "@/data/projectsData";
 import ProjectCaseStudyModal from "./ProjectCaseStudyModal";
 import ProjectQuickPreviewModal from "./ProjectQuickPreviewModal";
@@ -81,8 +81,20 @@ export default function ProjectsSection() {
                   ))}
                 </div>
 
-                {/* Dual Action Buttons: Quick Preview + Full Case Study */}
+                {/* Action Buttons: Live Site + Quick Preview + Full Case Study */}
                 <div className="flex flex-wrap items-center gap-3 pt-3">
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm flex items-center gap-1.5 text-xs shadow-[0_0_15px_rgba(99,102,241,0.25)]"
+                    >
+                      <Globe className="w-3.5 h-3.5 text-[#A5B4FC]" />
+                      <span>Live Site ({project.demoUrl.replace(/^https?:\/\//, "")})</span>
+                      <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  )}
                   <button
                     onClick={() => setQuickPreviewProject(project)}
                     className="btn btn-secondary btn-sm flex items-center gap-1.5 text-xs"
@@ -92,10 +104,10 @@ export default function ProjectsSection() {
                   </button>
                   <button
                     onClick={() => setFullCaseStudyProject(project)}
-                    className="btn btn-primary btn-sm flex items-center gap-2 text-xs"
+                    className="btn btn-secondary btn-sm flex items-center gap-2 text-xs"
                   >
-                    <span>View Case Study</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <span>Case Study</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#818CF8]" />
                   </button>
                 </div>
 

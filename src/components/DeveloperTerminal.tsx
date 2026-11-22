@@ -20,7 +20,9 @@ export default function DeveloperTerminal() {
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (history.length > 1) {
+      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }, [history]);
 
   const handleCommand = (e: React.FormEvent) => {
@@ -38,10 +40,10 @@ export default function DeveloperTerminal() {
         outputResult = "Farhan Khan — Full-Stack Web Developer building complete, production-ready applications from schema to browser engine.";
         break;
       case "stack":
-        outputResult = "Laravel · PHP · MySQL · JavaScript · REST APIs · Git / GitHub";
+        outputResult = "React.js · Node.js (Microservices) · PostgreSQL · Laravel & PHP · MySQL · WebSockets · REST APIs · Git / GitHub";
         break;
       case "projects":
-        outputResult = "1. JIBZ CRM  2. KT Messenger  3. Employee Attendance System  4. Analytics & API Integration Engine";
+        outputResult = "1. JIBZ CRM (jibzcrm.in) · 2. KT Messenger (web.ktmessenger.com) · 3. Employee Attendance System · 4. Analytics & API Integration Engine";
         break;
       case "experience":
         outputResult = "Full-Stack Web Developer (2023 - Present) | Backend & API Developer (2022 - 2023)";

@@ -103,16 +103,29 @@ export default function ProjectQuickPreviewModal({
 
         {/* Actions CTA */}
         <div className="pt-4 border-t border-[#1E222A] flex flex-wrap items-center justify-between gap-4">
-          <button
-            onClick={() => {
-              onClose();
-              onOpenFullCaseStudy(project);
-            }}
-            className="btn btn-primary text-xs flex items-center gap-2"
-          >
-            <span>View Full Case Study</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              onClick={() => {
+                onClose();
+                onOpenFullCaseStudy(project);
+              }}
+              className="btn btn-primary text-xs flex items-center gap-2"
+            >
+              <span>View Full Case Study</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            {project.demoUrl && (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary text-xs flex items-center gap-2 border-[#6366F1]/40 text-[#818CF8] hover:text-[#F5F7FA]"
+              >
+                <span>Live App ({project.demoUrl.replace(/^https?:\/\//, "")})</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            )}
+          </div>
 
           {project.githubUrl && (
             <a

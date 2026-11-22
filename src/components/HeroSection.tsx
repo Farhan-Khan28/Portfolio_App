@@ -18,11 +18,13 @@ export default function HeroSection() {
           <div className="lg:col-span-6 flex flex-col items-start gap-6">
             
             {/* Technical Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#101216] border border-[#252A33] text-xs font-mono text-[#818CF8]">
+            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-[#101216] border border-[#252A33] text-xs font-mono text-[#818CF8]">
               <span className="w-2 h-2 rounded-full bg-[#6366F1] animate-pulse" />
-              <span>FULL-STACK WEB DEVELOPER</span>
+              <span>FULL-STACK DEVELOPER</span>
               <span className="text-[#6F7682]">//</span>
-              <span className="text-[#A5ABB5]">LARAVEL & MYSQL ARCHITECT</span>
+              <span className="text-[#A5ABB5]">REACT & NODE.JS MICROSERVICES</span>
+              <span className="text-[#6F7682]">//</span>
+              <span className="text-[#A5ABB5]">LARAVEL, POSTGRESQL & MYSQL</span>
             </div>
 
             {/* Main Headline */}
@@ -37,7 +39,7 @@ export default function HeroSection() {
 
             {/* Supporting Description */}
             <p className="text-base sm:text-lg text-[#A5ABB5] leading-relaxed max-w-xl font-normal">
-              I design and develop scalable web solutions with modern interfaces, robust backend systems, APIs, database architecture, authentication, and real-world business logic.
+              I design and engineer scalable web platforms with reactive React interfaces, high-concurrency Node.js microservices, robust Laravel systems, PostgreSQL and MySQL databases, and real-time WebSockets.
             </p>
 
             {/* Dual CTAs with Magnetic Effect */}
