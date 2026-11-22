@@ -7,24 +7,24 @@ import MagneticButton from "./MagneticButton";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden" id="hero">
+    <section className="relative pt-28 pb-16 md:pt-40 md:pb-28 overflow-hidden" id="hero">
       {/* Background Decorative Gradients */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#6366F1]/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
           {/* Left Column: Positioning & Value Proposition */}
           <div className="lg:col-span-6 flex flex-col items-start gap-6">
             
             {/* Technical Eyebrow */}
-            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-[#101216] border border-[#252A33] text-xs font-mono text-[#818CF8]">
-              <span className="w-2 h-2 rounded-full bg-[#6366F1] animate-pulse" />
+            <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 px-3 py-1.5 rounded-full bg-[#101216] border border-[#252A33] text-xs font-mono text-[#818CF8]">
+              <span className="w-2 h-2 rounded-full bg-[#6366F1] animate-pulse flex-shrink-0" />
               <span>FULL-STACK DEVELOPER</span>
-              <span className="text-[#6F7682]">//</span>
-              <span className="text-[#A5ABB5]">REACT & NODE.JS MICROSERVICES</span>
-              <span className="text-[#6F7682]">//</span>
-              <span className="text-[#A5ABB5]">LARAVEL, POSTGRESQL & MYSQL</span>
+              <span className="text-[#6F7682] hidden sm:inline">//</span>
+              <span className="text-[#A5ABB5] hidden sm:inline">REACT & NODE.JS MICROSERVICES</span>
+              <span className="text-[#6F7682] hidden md:inline">//</span>
+              <span className="text-[#A5ABB5] hidden md:inline">LARAVEL, POSTGRESQL & MYSQL</span>
             </div>
 
             {/* Main Headline */}

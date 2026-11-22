@@ -84,7 +84,7 @@ export default function ArchitectureDiagram() {
       </div>
 
       {/* Main Interactive System Flow */}
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
         {/* Left Column: Visual Architecture Flow Nodes */}
         <div className="lg:col-span-7 flex flex-col items-center gap-3">
           

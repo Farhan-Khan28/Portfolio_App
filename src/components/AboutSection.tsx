@@ -30,10 +30,10 @@ export default function AboutSection() {
   return (
     <section className="section bg-[#08090B]" id="about" ref={containerRef}>
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
           {/* Left Column: Scroll-Linked Word Reveal Typography */}
-          <div className="lg:col-span-5 flex flex-col gap-6 sticky top-28">
+          <div className="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-28">
             <div className="eyebrow">
               <span>// ENGINEERING PHILOSOPHY</span>
             </div>
