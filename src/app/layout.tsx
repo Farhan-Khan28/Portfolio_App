@@ -111,6 +111,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "lKbsaf7qb4X17hp4Ajj_1J_EolEV-A8TMfoL-M02LCA",
+  },
   category: "technology",
 };
 
@@ -170,6 +173,7 @@ export default function RootLayout({
     >
       <head>
         <link rel="canonical" href="https://farhan-khan28.github.io/Portfolio_App/" />
+        <meta name="google-site-verification" content="lKbsaf7qb4X17hp4Ajj_1J_EolEV-A8TMfoL-M02LCA" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
