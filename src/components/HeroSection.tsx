@@ -59,11 +59,12 @@ export default function HeroSection() {
               <span className="font-mono text-xs text-[#6F7682]">CONNECT:</span>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Farhan-Khan28"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg bg-[#101216] border border-[#252A33] text-[#A5ABB5] hover:text-[#F5F7FA] hover:border-[#6366F1] transition-all"
                   aria-label="GitHub Profile"
+                  title="Farhan Khan GitHub Profile"
                 >
                   <GithubIcon className="w-4 h-4" />
                 </a>

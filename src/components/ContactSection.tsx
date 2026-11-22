@@ -103,10 +103,12 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/Farhan-Khan28"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-xl bg-[#101216] border border-[#252A33] flex items-center justify-between group hover:border-[#6366F1] transition-all no-underline"
+                aria-label="Farhan Khan GitHub Repositories"
+                title="Farhan Khan GitHub Repositories"
               >
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 rounded-lg bg-[#15181D] border border-[#252A33] text-[#F5F7FA]">

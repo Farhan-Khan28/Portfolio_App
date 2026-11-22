@@ -1,0 +1,9 @@
+# Robots.txt for Farhan Khan Portfolio
+# Crawlers welcome: Googlebot, Bingbot, Slurp, DuckDuckBot, Baiduspider, Yandex
+
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://farhan-khan28.github.io/Portfolio_App/sitemap.xml
+Host: https://farhan-khan28.github.io

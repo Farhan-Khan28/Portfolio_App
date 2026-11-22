@@ -89,6 +89,8 @@ export default function ProjectsSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm flex items-center gap-1.5 text-xs shadow-[0_0_15px_rgba(99,102,241,0.25)]"
+                      title={`Visit live production site for ${project.title} (${project.demoUrl})`}
+                      aria-label={`Visit live production deployment of ${project.title}`}
                     >
                       <Globe className="w-3.5 h-3.5 text-[#A5B4FC]" />
                       <span>Live Site ({project.demoUrl.replace(/^https?:\/\//, "")})</span>

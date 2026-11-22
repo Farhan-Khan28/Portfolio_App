@@ -91,6 +91,7 @@ export default function ArchitectureDiagram() {
           {/* Node 1: FRONTEND */}
           <button
             onClick={() => setActiveNode("frontend")}
+            aria-label="Inspect Frontend Client Layer node"
             className={`w-full text-left p-3.5 rounded-xl border transition-all duration-200 flex items-center justify-between ${
               activeNode === "frontend"
                 ? "bg-[#15181D] border-[#6366F1] shadow-[0_0_20px_rgba(99,102,241,0.2)]"
@@ -122,6 +123,7 @@ export default function ArchitectureDiagram() {
           {/* Node 2: REST API GATEWAY */}
           <button
             onClick={() => setActiveNode("api")}
+            aria-label="Inspect REST API Gateway node"
             className={`w-full text-left p-3.5 rounded-xl border transition-all duration-200 flex items-center justify-between ${
               activeNode === "api"
                 ? "bg-[#15181D] border-[#6366F1] shadow-[0_0_20px_rgba(99,102,241,0.2)]"
@@ -153,6 +155,7 @@ export default function ArchitectureDiagram() {
           {/* Node 3: LARAVEL BACKEND */}
           <button
             onClick={() => setActiveNode("backend")}
+            aria-label="Inspect Backend Core services node"
             className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-center justify-between ${
               activeNode === "backend"
                 ? "bg-[#15181D] border-[#6366F1] shadow-[0_0_25px_rgba(99,102,241,0.25)]"
@@ -189,6 +192,7 @@ export default function ArchitectureDiagram() {
           {/* Node 4: MYSQL DATABASE */}
           <button
             onClick={() => setActiveNode("database")}
+            aria-label="Inspect Relational Database Engine node"
             className={`w-full text-left p-3.5 rounded-xl border transition-all duration-200 flex items-center justify-between ${
               activeNode === "database"
                 ? "bg-[#15181D] border-[#6366F1] shadow-[0_0_20px_rgba(99,102,241,0.2)]"

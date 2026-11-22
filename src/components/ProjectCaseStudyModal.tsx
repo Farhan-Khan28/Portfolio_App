@@ -221,6 +221,8 @@ export default function ProjectCaseStudyModal({ project, onClose }: ModalProps) 
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={`Launch live production deployment of ${project.title}`}
+                  aria-label={`Launch live system for ${project.title}`}
                   className="btn btn-primary text-xs flex items-center gap-2 shadow-[0_0_15px_rgba(99,102,241,0.25)]"
                 >
                   <Globe className="w-4 h-4" />
@@ -233,6 +235,8 @@ export default function ProjectCaseStudyModal({ project, onClose }: ModalProps) 
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={`View source repository for ${project.title} on GitHub`}
+                  aria-label={`View ${project.title} on GitHub`}
                   className="btn btn-secondary text-xs flex items-center gap-2"
                 >
                   <GithubIcon className="w-4 h-4" />

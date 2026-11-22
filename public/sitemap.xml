@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://farhan-khan28.github.io/Portfolio_App/</loc>
+    <lastmod>2026-11-22T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://farhan-khan28.github.io/Portfolio_App/og-image.png</image:loc>
+      <image:title>Farhan Khan — Senior Full-Stack Web Developer Portfolio</image:title>
+      <image:caption>Full-Stack Web Engineering with React.js, Node.js, Laravel, PostgreSQL, and MySQL</image:caption>
+    </image:image>
+  </url>
+</urlset>

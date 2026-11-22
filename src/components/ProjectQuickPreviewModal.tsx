@@ -119,6 +119,8 @@ export default function ProjectQuickPreviewModal({
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                title={`Open live application for ${project.title}`}
+                aria-label={`Open live system for ${project.title}`}
                 className="btn btn-secondary text-xs flex items-center gap-2 border-[#6366F1]/40 text-[#818CF8] hover:text-[#F5F7FA]"
               >
                 <span>Live App ({project.demoUrl.replace(/^https?:\/\//, "")})</span>
@@ -132,6 +134,8 @@ export default function ProjectQuickPreviewModal({
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              title={`View ${project.title} on GitHub`}
+              aria-label={`View ${project.title} on GitHub`}
               className="btn btn-secondary text-xs flex items-center gap-2"
             >
               <GithubIcon className="w-4 h-4" />
